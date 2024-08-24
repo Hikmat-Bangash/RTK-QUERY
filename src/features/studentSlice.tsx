@@ -14,7 +14,7 @@ export const studentApi = createApi({
       query: () => "/crud",
       providesTags: ["Student"],
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      transformResponse: (response: Student[], meta, args: any) => {
+      transformResponse: (response: Student[], args: any) => {
         if (args === 2) {
           return response.slice(0, 4);
         }
