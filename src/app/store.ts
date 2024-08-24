@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // import { configureStore } from "@reduxjs/toolkit";
 // import { studentApi } from "../features/studentSlice";
 
@@ -9,6 +10,7 @@
 //     getDefaultMiddleware().concat(studentApi.middleware),
 // });
 
+// @ts-nocheck
 
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';

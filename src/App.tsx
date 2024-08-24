@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
+
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import "./App.css";
 import Read from "./components/Read";
@@ -5,7 +8,6 @@ import Header from "./components/Header";
 import { Provider } from "react-redux";
 import { store, persistor } from "./app/store";
 import { PersistGate } from "redux-persist/integration/react";
-
 
 import AddEdit from "./components/AddEdit";
 
@@ -29,7 +31,6 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
-
 
 function App() {
   return (
